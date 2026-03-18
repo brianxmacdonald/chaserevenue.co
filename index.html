@@ -129,9 +129,9 @@
     /* BOOK */
     .book-section { padding: 72px 24px; max-width: var(--max); margin: 0 auto; }
     .book-layout { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start; }
-    @media (min-width: 620px) { .book-layout { grid-template-columns: 210px 1fr; gap: 52px; } }
+    @media (min-width: 620px) { .book-layout { grid-template-columns: 40% 1fr; gap: 52px; } }
     .book-cover {
-      width: 100%; max-width: 210px; height: auto; display: block; border-radius: 4px;
+      width: 100%; height: auto; display: block; border-radius: 4px; cursor: pointer;
       box-shadow: 0 24px 64px rgba(0,0,0,0.7), 0 6px 20px rgba(0,0,0,0.5); margin-bottom: 16px;
     }
     .book-meta { font-size: 12px; color: var(--gray); margin-bottom: 8px; line-height: 1.5; }
@@ -142,7 +142,7 @@
       padding: 13px 0 13px 22px; border-bottom: 1px solid var(--border);
       font-size: 14px; color: #b0b0a8; line-height: 1.65; position: relative;
     }
-    .bullets li::before { content: '4'; color: var(--gold); position: absolute; left: 0; top: 13px; }
+    .bullets li::before { content: '✦'; color: var(--gold); position: absolute; left: 0; top: 13px; }
     .price-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
     .price { font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 38px; letter-spacing: -0.03em; color: var(--white); }
     .btn-gold {
@@ -211,7 +211,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo" style="display:flex;align-items:center;"><img src="chase-revenue-logo-2026-300.jpg" alt="Chase Révenue" style="width:200px;height:auto;display:block;" /></div>
+    <div class="nav-logo" style="display:flex;align-items:center;"><img src="chase-revenue-logo-2026-300.png" alt="Chase Révenue" style="width:200px;height:auto;display:block;" /></div>
     <ul class="nav-links">
       <li><a href="#book">Book</a></li>
       <li><a href="/dashboard">Dashboard</a></li>
@@ -264,7 +264,7 @@
   <div class="eyebrow">Book</div>
   <div class="book-layout">
     <div class="book-left">
-      <img src="CLAW-RICH-BOOK.png" alt="CLAW RICH by Chase Révenue" class="book-cover" />
+      <a href="#" onclick="openModal(event)"><img src="CLAW-RICH-BOOK.png" alt="CLAW RICH by Chase Révenue" class="book-cover" /></a>
       <div class="book-meta">Digital Book &nbsp;&middot;&nbsp; ~65 Pages &nbsp;&middot;&nbsp; 2026</div>
       <div class="book-caption">The New Blueprint Self-Made Entrepreneurs Are Using to Scale Income With AI Agents in 2026</div>
     </div>
@@ -341,7 +341,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <div class="footer-logo"><img src="chase-revenue-logo-2026-300.jpg" alt="Chase Révenue" style="width:200px;height:auto;display:block;" /></div>
+      <div class="footer-logo"><img src="chase-revenue-logo-2026-300.png" alt="Chase Révenue" style="width:200px;height:auto;display:block;" /></div>
       <ul class="footer-links">
         <li><a href="https://x.com/ChaseRevenueAI" target="_blank">X / Twitter</a></li>
         <li><a href="https://setupclaw.tech" target="_blank">SetupClaw.tech</a></li>
